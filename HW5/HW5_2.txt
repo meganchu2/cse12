@@ -1,0 +1,70 @@
+/*
+* NAME: Megan Chu
+* ID: A12814536
+* LOGIN: cs12waot
+*/
+
+Order of logic denoted by numbers starting with 1 and ending with 6
+
+1. Alpha (Selection Sort)
+Alpha button produces the same amount of comparisons for any list of the 
+same size.  For example, for a list of length 5, it produces 10 
+comparisons.  For a list of length 10, it produces 45 comparisons.  
+And for a list of length 20, it produces 190 comparisions.  Selection 
+sort can't tell whether a list is sorted or not.  Therefore,it loops 
+through the list to find the smallest element and swap it to the front.  
+In a sorted array we don't have to swap, so we see 0 movements in Alpha, 
+but still the same number of comparisons as a random array of the same 
+size.  Therefore Alpha must be Selection sort.
+
+5. Beta (Bubble Sort)
+Beta is substantially faster for lists that are almost in order. For 
+example for a list size 10 almost in order, it made only 12 comparisons 
+when other buttons made 20 + comparisons.  It also gets the worst runtime 
+for revers order lists.  For example, It had 190 comparisons for a reverse 
+order list sized 20, compared to random list with 115 comparisons, almost 
+in order list with 28 comparisons,and in order list with 19 comparisons.  
+Therefore, it is safe to conclude that Beta is Bubble Sort, because bubble 
+sort will loop through the list a couple of times if it is almost in order, 
+and stop once the list is in order.  It would also spend the most time to 
+sort a reverse list since it has to move every single element the maximum 
+number of times from front to back of the list to put them in order.
+
+2. Gamma (Check Sort)
+Gamma's running time is by far the greatest out of all the buttons, 
+pointing out that it is highly likely it's runtime is some big number like 
+n!.  To further support this, with a random list of length 5, the number 
+of comparisons was 153, and the number of movements was 912.  Just by 
+doubling the length of the random list to 10, we ended up with 4544159 
+comparisons, and 28654779 movements.  This growth rate surpasses quadratic 
+and exponential growth rates, telling us that the growth rate for the 
+runtime must be n!, which leads us to believe the sorting method is 
+Checksort, which has the same running time.
+
+6. Delta (Insertion Sort)
+By process of elimination, Delta should be insertion sort.  We can back 
+this up by observing that Delta makes the same number of comparisons as the 
+length of the list if the list is in order.  Also for insertion sort, we 
+would have more movements than the  other sorting methods since we have so 
+shift items in the list when inserting an item into the “sorted part”.  
+This holds true as we can see for a random list size of 10, Delta has 95 
+movements, whereas the other sorting buttons (except checksort) all have 
+movements less than 70 (averaging around 45 movements).
+
+3. Epsilon (Merge Sort)
+Epsilon has the same number of movements for any list of the same length, 
+this makes sense because it takes the list and splits it in two repeatedly 
+until we have separate lists of 1 item.  Then mergesort puts all the lists 
+back together in sorted order.  This requires a constant number of movements 
+for lists of a certain size.
+
+4. Zeta (Quick Sort)
+Quick sort has an average running time of O(nlogn) this is the same as the 
+running time for mergesort.  Therefore we need to look for the button who's 
+running time grows at a similar rate as that of mergesort.  At a random list 
+size of 20480 items, Epsilon has 267805 comparisons and Zeta has 474817 
+comparisons.  On the other hand, Alpha has 20970496 comparisons, Beta has 
+10397099 comparisons, Delta has 41504768 comparisons, and Gamma freezes the 
+window from its tremendous running time.  Zeta clearly has the runtime that 
+grows at the same rate as Epsilon (Merge Sort). Therefore Zeta must be 
+Quicksort.

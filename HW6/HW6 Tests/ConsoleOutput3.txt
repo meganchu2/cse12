@@ -1,0 +1,79 @@
+####START COURSE SCHEDULING####
+
+
+####STARTING BATCH ENROLLMENT####
+####ENDING BATCH ENROLLMENT####
+
+Waitlisting Pooja(A11111) to Course CSE11 with coins 20
+Waitlisting Marina(A65545) to Course CSE15L with coins 20
+Waitlisting Don(A76548) to Course CSE15L with coins 25
+Waitlisting Pooja(A11111) to Course CSE15L with coins 10
+Waitlisting Pooja(A11111) to Course CSE30 with coins 5
+
+####STARTING BATCH ENROLLMENT####
+Enrolling Pooja(A11111) to Course CSE11 with coins 20
+Enrolling Don(A76548) to Course CSE15L with coins 25
+Enrolling Pooja(A11111) to Course CSE30 with coins 5
+Enrolling Marina(A65545) to Course CSE15L with coins 20
+####ENDING BATCH ENROLLMENT####
+
+Waitlisting Thiago(A67876) to Course CSE15L with coins 10
+Don(A76548) is already enrolled in Course CSE15L
+Waitlisting Max(A55555) to Course CSE15L with coins 20
+Waitlisting Don(A76548) to Course CSE20 with coins 15
+
+####STARTING BATCH ENROLLMENT####
+Enrolling Max(A55555) to Course CSE15L with coins 20
+Enrolling Don(A76548) to Course CSE20 with coins 15
+CSE15Lhas already reached maximum capacity. There are no more seats left
+CSE15Lhas already reached maximum capacity. There are no more seats left
+####ENDING BATCH ENROLLMENT####
+
+Insufficient course coins. Cannot waitlist Max(A55555) to CSE12
+Waitlisting Max(A55555) to Course CSE20 with coins 15
+
+####STARTING BATCH ENROLLMENT####
+CSE15Lhas already reached maximum capacity. There are no more seats left
+Enrolling Max(A55555) to Course CSE20 with coins 15
+CSE15Lhas already reached maximum capacity. There are no more seats left
+####ENDING BATCH ENROLLMENT####
+
+Waitlisting Haoran(A12345) to Course CSE12 with coins 20
+Waitlisting Haoran(A12345) to Course CSE20 with coins 10
+Insufficient course coins. Cannot waitlist Max(A55555) to CSE30
+
+####END COURSE SCHEDULING####
+
+
+########COURSE INFORMATION######
+CSE12  Data_Structures_and_Object_Oriented_Programming
+	Roster: []
+CSE11  Introduction_to_CS_and_OOP_in_Java
+	Roster: [Pooja(A11111)]
+CSE15L  Software_Tools_and_Techniques
+	Roster: [Don(A76548), Marina(A65545), Max(A55555)]
+CSE30  Computer_Organization_and_Systems_Programming
+	Roster: [Pooja(A11111)]
+CSE20  Introduction_to_Discrete_Mathematics
+	Roster: [Don(A76548), Max(A55555)]
+
+
+########STUDENT INFORMATION######
+Pooja(A11111)
+	 Enrolled courses: [CSE11, CSE30]
+	 Waitlisted courses: [CSE15L]
+Don(A76548)
+	 Enrolled courses: [CSE15L, CSE20]
+	 Waitlisted courses: []
+Marina(A65545)
+	 Enrolled courses: [CSE15L]
+	 Waitlisted courses: []
+Thiago(A67876)
+	 Enrolled courses: []
+	 Waitlisted courses: [CSE15L]
+Max(A55555)
+	 Enrolled courses: [CSE15L, CSE20]
+	 Waitlisted courses: []
+Haoran(A12345)
+	 Enrolled courses: []
+	 Waitlisted courses: [CSE12, CSE20]

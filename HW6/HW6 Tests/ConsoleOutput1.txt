@@ -1,0 +1,52 @@
+####START COURSE SCHEDULING####
+
+Waitlisting Marina(A65545) to Course CSE12 with coins 20
+Waitlisting Don(A76548) to Course CSE11 with coins 45
+Waitlisting Pooja(A11111) to Course CSE12 with coins 40
+Waitlisting Max(A55555) to Course CSE11 with coins 40
+Waitlisting Haoran(A12345) to Course CSE12 with coins 15
+
+####STARTING BATCH ENROLLMENT####
+Enrolling Pooja(A11111) to Course CSE12 with coins 40
+Enrolling Don(A76548) to Course CSE11 with coins 45
+Enrolling Marina(A65545) to Course CSE12 with coins 20
+Enrolling Max(A55555) to Course CSE11 with coins 40
+####ENDING BATCH ENROLLMENT####
+
+Waitlisting Haoran(A12345) to Course CSE20 with coins 10
+
+####END COURSE SCHEDULING####
+
+
+########COURSE INFORMATION######
+CSE12  Data_Structures_and_Object_Oriented_Programming
+	Roster: [Pooja(A11111), Marina(A65545)]
+CSE11  Introduction_to_CS_and_OOP_in_Java
+	Roster: [Don(A76548), Max(A55555)]
+CSE15L  Software_Tools_and_Techniques
+	Roster: []
+CSE30  Computer_Organization_and_Systems_Programming
+	Roster: []
+CSE20  Introduction_to_Discrete_Mathematics
+	Roster: []
+
+
+########STUDENT INFORMATION######
+Pooja(A11111)
+	 Enrolled courses: [CSE12]
+	 Waitlisted courses: []
+Don(A76548)
+	 Enrolled courses: [CSE11]
+	 Waitlisted courses: []
+Marina(A65545)
+	 Enrolled courses: [CSE12]
+	 Waitlisted courses: []
+Thiago(A67876)
+	 Enrolled courses: []
+	 Waitlisted courses: []
+Max(A55555)
+	 Enrolled courses: [CSE11]
+	 Waitlisted courses: []
+Haoran(A12345)
+	 Enrolled courses: []
+	 Waitlisted courses: [CSE12, CSE20]
