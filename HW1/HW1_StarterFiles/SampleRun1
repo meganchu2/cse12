@@ -1,0 +1,149 @@
+
+You start first. You get X and I get 0
+
+
+Enter your move: (row column): 1 1
+
+  |   |  
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   |  
+
+
+My Move is: 0 0
+
+O |   |  
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   |  
+
+
+Enter your move: (row column): 2 2
+
+O |   |  
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   | X
+
+
+My Move is: 1 0
+
+O |   |  
+_   _   _ 
+O | X |  
+_   _   _ 
+  |   | X
+
+
+Enter your move: (row column): 0 1
+
+O | X |  
+_   _   _ 
+O | X |  
+_   _   _ 
+  |   | X
+
+
+My Move is: 2 0
+
+O | X |  
+_   _   _ 
+O | X |  
+_   _   _ 
+O |   | X
+
+I won
+
+Statistics  I won: 100%   You won: 0%    We tied: 0%
+
+
+Play again? y
+
+Clear statistics? n
+
+I start first. I choose X and you get 0
+
+
+My Move is: 2 2
+
+  |   |  
+_   _   _ 
+  |   |  
+_   _   _ 
+  |   | X
+
+
+Enter your move: (row column): 1 1
+
+  |   |  
+_   _   _ 
+  | O |  
+_   _   _ 
+  |   | X
+
+
+My Move is: 1 2
+
+  |   |  
+_   _   _ 
+  | O | X
+_   _   _ 
+  |   | X
+
+
+Enter your move: (row column): 0 2
+
+  |   | O
+_   _   _ 
+  | O | X
+_   _   _ 
+  |   | X
+
+
+My Move is: 2 0
+
+  |   | O
+_   _   _ 
+  | O | X
+_   _   _ 
+X |   | X
+
+
+Enter your move: (row column): 2 1
+
+  |   | O
+_   _   _ 
+  | O | X
+_   _   _ 
+X | O | X
+
+
+My Move is: 0 0
+
+X |   | O
+_   _   _ 
+  | O | X
+_   _   _ 
+X | O | X
+
+
+Enter your move: (row column): 0 1
+
+X | O | O
+_   _   _ 
+  | O | X
+_   _   _ 
+X | O | X
+
+
+You won!!!
+
+Statistics  I won: 50%   You won: 50%    We tied: 0%
+
+
+Play again? n
+
+Bye, see you later!

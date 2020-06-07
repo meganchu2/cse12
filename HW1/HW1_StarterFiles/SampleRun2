@@ -1,0 +1,121 @@
+You start first. You get X and I get 0
+
+
+Enter your move: (row column): 1 1
+
+  |   |  
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   |  
+
+
+My Move is: 0 0
+
+O |   |  
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   |  
+
+
+Enter your move: (row column): 2 2
+
+O |   |  
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   | X
+
+
+My Move is: 0 2
+
+O |   | O
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   | X
+
+
+Enter your move: (row column): 2 0
+
+O |   | O
+_   _   _ 
+  | X |  
+_   _   _ 
+X |   | X
+
+
+My Move is: 0 1
+
+O | O | O
+_   _   _ 
+  | X |  
+_   _   _ 
+X |   | X
+
+I won
+
+Statistics  I won: 100%   You won: 0%    We tied: 0%
+
+
+Play again? y
+
+Clear statistics? y
+
+You start first. You get X and I get 0
+
+
+Enter your move: (row column): 1 1
+
+  |   |  
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   |  
+
+
+My Move is: 1 0
+
+  |   |  
+_   _   _ 
+O | X |  
+_   _   _ 
+  |   |  
+
+
+Enter your move: (row column): 2 0
+
+  |   |  
+_   _   _ 
+O | X |  
+_   _   _ 
+X |   |  
+
+
+My Move is: 1 2
+
+  |   |  
+_   _   _ 
+O | X | O
+_   _   _ 
+X |   |  
+
+
+Enter your move: (row column): 0 2
+
+  |   | X
+_   _   _ 
+O | X | O
+_   _   _ 
+X |   |  
+
+
+You won!!!
+
+Statistics  I won: 0%   You won: 100%    We tied: 0%
+
+
+Play again? n
+
+Bye, see you later!

@@ -1,0 +1,27 @@
+/* 
+* NAME: Megan Chu
+* PID: A12814536
+* LOGIN: cs12waot
+*/
+
+
+What command line is used to create the javadoc documentation in HW1?
+
+"javadoc Stats.java" 
+    for the javadoc documentation without the version and author
+"javadoc -d ~/path/to/directory Stats.java" 
+    to specify the directory you want to generate the documentation in if it 
+    is not the current directory
+"javadoc -version -author Stats.java" 
+    for the javadoc documentation with the version and author listed
+
+
+What command-line flag(s) is/are used to create the author and version 
+entries for the class?
+
+"-version" is used to create the version entry
+"-author" is used to create the author entry
+we can put these flags in the command line as shown above to generate a 
+javadoc with the version and author entries
+
+

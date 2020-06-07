@@ -1,0 +1,116 @@
+I start first. I choose X and you get 0
+
+
+My Move is: 1 1
+
+  |   |  
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   |  
+
+
+Enter your move: (row column): 1 1
+
+Sorry that cell is already occupied. Please try again. 
+
+Enter your move: (row column): 0 0
+
+O |   |  
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   |  
+
+
+My Move is: 0 2
+
+O |   | X
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   |  
+
+
+Enter your move: (row column): 0 1
+
+O | O | X
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   |  
+
+
+My Move is: 2 0
+
+O | O | X
+_   _   _ 
+  | X |  
+_   _   _ 
+X |   |  
+
+I won
+
+Statistics  I won: 100%   You won: 0%    We tied: 0%
+
+
+Play again? y
+
+Clear statistics? n
+
+You start first. You get X and I get 0
+
+
+Enter your move: (row column): 1 1
+
+  |   |  
+_   _   _ 
+  | X |  
+_   _   _ 
+  |   |  
+
+
+My Move is: 1 2
+
+  |   |  
+_   _   _ 
+  | X | O
+_   _   _ 
+  |   |  
+
+
+Enter your move: (row column): 0 2
+
+  |   | X
+_   _   _ 
+  | X | O
+_   _   _ 
+  |   |  
+
+
+My Move is: 0 0
+
+O |   | X
+_   _   _ 
+  | X | O
+_   _   _ 
+  |   |  
+
+
+Enter your move: (row column): 2 0
+
+O |   | X
+_   _   _ 
+  | X | O
+_   _   _ 
+X |   |  
+
+
+You won!!!
+
+Statistics  I won: 50%   You won: 50%    We tied: 0%
+
+
+Play again? n
+
+Bye, see you later!
