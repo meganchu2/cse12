@@ -1,0 +1,120 @@
+/*
+* NAME: Megan Chu
+* ID: A12814536
+* LOGIN: cs12waot
+*/
+
+1. Answer: Running time is O(n)
+
+Explanation: There is one instruction in the first line that executes once.  
+There is one instruction in the loop header that executes (100n + 1) + 1 
+times (including the last loop check).  There is 1 instruction in the body
+ of the loop that executes 100n + 1 times.  The total of the run times is:
+
+(1) + ((100n + 1) + 1) + (100n + 1) 
+= 1 + 2(100n + 1) + 1
+= 200n + 4
+= O(n)
+
+
+2. Answer: Running time is O(n^3)
+
+Explanation: There is one instruction in the first line that executes once. 
+ There is one instruction in the loop header that executes 
+(floor((n^3)/4) + 1) + 1 times (including the last loop check).  There is 
+1 instruction in the body of the loop that executes (floor((n^3)/4) + 1) 
+times.  The total of the runtimes is:
+
+(1) + (floor((n^3)/4) + 1) + 1 + (floor((n^3)/4) + 1) 
+= 1 + 2(floor((n^3)/4) + 1) + 1
+= floor((n^3)/2) + 4
+= O(n^3)
+
+
+3. Answer: Running time is O(logn)
+
+Explanation: There is one instruction in the first line that executes once.  
+There is one instruction in the loop header that executes logn + 1 (base 2) 
+times (including the last loop check).  There is 1 instruction in the body 
+of the loop that executes logn times.  The total of the runtimes is:
+
+(1) + (logn + 1) + (logn) 
+= 1 + 2(logn) + 1
+= 2logn + 2
+= O(logn)
+
+
+4. Answer: Running time is O(1)
+
+Explanation: There is one instruction in the first line that executes once. 
+ There is one instruction in the loop header that executes 100 + 1 times 
+(including the last loop check).  There is 1 instruction in the body of the 
+loop that executes log1000 times.  The total of the runtimes is:
+
+1 + (100 + 1) + (log1000)
+= 1 + 101 + log1000
+= 102 + log1000
+= O(1)
+
+
+5. Answer: Running time is O(n^2)
+
+Explanation: There is one instruction in the first line that executes once.
+ There is one instruction in the first loop header that executes n + 1 times 
+(including the last loop check).  There is 1 instruction in the second loop 
+in the body of the first loop that executes 1 + 2 + 3 + 4 + ?. + n times with 
+different loops for each time the first loop loops.  We can say this is less 
+than n + n + n + n + ... + n, so this runtime is O(n^2).  The body of the 
+second for loop therefore also has run time O(n^2).  because n^2 takes 
+precedence above the first line that executed only once, the runtime for 
+this is O(n^2).
+
+
+6. Answer: Running time is O()
+
+Explanation: There is one instruction in the first line that executes once.  
+There is one instruction in the loop header that executes logn + 1 (base 2) 
+times (including the last loop check).  There is 1 instruction in the second 
+loop in the body of the first loop that executes () times.  The total of the 
+runtimes is:
+
+1 +  
+= 1 + 
+= 
+= O()
+
+
+7. Answer: Running time is O(n^3)
+
+Explanation: There is one instruction in the firstloop header that executes 
+2n + 1 times (including the last loop check).  There is 1 instruction in the 
+second loop that executes (n^2 + 1) + 1 times (including last loop check).  
+The loop in the second loop executes (n + 1) + 1 times (including last loop 
+check).  The loop with bigger run time takes precedence, in this case the 
+second loop.  The runtime of the second loop and nested loop body is
+O(((n^2 + 1) + 1)((n + 1) + 1)).  We can simplify this to O((n^2)(n)) or O(n^3).
+
+
+8. Answer: Running time is O(n^3)
+
+Explanation: There is one instruction in the first loop header that executes 
+n + 1 times (including the last loop check).  The loop in the first loop 
+executes (n^2 - 1) + 1 times (including last loop check) each time in the 
+very worst case.  The runtime of the first loop and nested loop body is 
+O(((n + 1))((n^2 - 1) + 1)).  We can simplify this to O((n)(n^2)) or O(n^3).
+
+
+9. Answer: Running time is O(n^2)
+
+Explanation: The first loop executes n - 1 times including the last check.  
+The nested loop executes (n-1) times in the worst case.  The runtime for 
+this would be O((n-1)(n-1)) in the worst case. Simplified to O(n^2).
+
+
+10. Answer: Running time is O((logn)^2)
+
+Explanation: The first loop executes logn times, the nexte for loop executes 
+logn times in the worst case where i = n.  The runtime would hence be
+ O ((logn)(logn)) or simplified to O((logn)^2).
+
+

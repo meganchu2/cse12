@@ -1,0 +1,40 @@
+/*
+* NAME: Megan Chu
+* ID: A12814536
+* LOGIN: cs12waot
+*/
+
+***Note*: For some reason my code doesn't work when I run 
+MazeSolverStack/Queue from the command line, but The code works when I 
+run MazeApp.**
+
+To perform the stack operations efficiently, the following methods for each 
+of the methods in the MyStack class were used:
+
+For the MyStack method, isEmpty(), the DoubleEndedLL method, isEmpty() was 
+used.  This has a constant runtime because it just returns true or false if 
+the size of the list is 0 or not, respectively. 
+
+For the MyStack method addElement(T newItem), the DoubleEndedLL method, 
+addFirst(T newItem) was used.  This is because in a singly linked list, 
+adding to the head of the list would take a constant runtime.  However, to 
+add to the end of the list, we would need to loop through the entire list 
+from head to tail to access the end nodes, this takes a runtime of O(n).  
+Therefore, adding to the head of the list would be more efficient.
+
+For the MyStack method removeElement(), the DoubleEndedLL method, 
+removeFirst() was used.  Similarly to the addFirst method, accessing the 
+front of the list takes a constant runtime, whereas removing from the end 
+of the list would take a runtime of O(n).  Therefore, removing the head of 
+the list would be more efficient.
+
+For the MyStack method size(), the DoubleEndedLL method, size() was used.  
+This has a constant runtime because it just has to return the current value 
+of nelems in the DoubleEndedLL.
+
+For the MyStack method peek(), the DoubleEndedLL method, getHeadValue() was 
+used.  This is so that peek is aligned with the FIFO guidelines we have 
+created from examining faster runtimes for add/removeElement methods.  
+Also, getHeadValue() has a constant runtime as well, because it just has to 
+return the current Node stored in the head variable in the DoubleEndedLL 
+class.

@@ -1,0 +1,12 @@
+Found the Escape!
+Path from Start to Exit : [5,10] [4,10] [3,10] [2,10] [2,9] [2,8] [2,7] [2,6] [3,6] [4,6] [4,7] [4,8] 
+
+______#......
+##o#######.#.
+##....xxxxx#.
+_#o##.x###x#.
+___#..xxx#x#.
+_#####.#E#S#.
+_____o.#__#_o
+
+Number of squares remaining in the worklist = 4
