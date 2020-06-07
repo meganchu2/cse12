@@ -1,0 +1,66 @@
+####START COURSE SCHEDULING####
+
+Waitlisting Pooja(A11111) to Course CSE12 with coins 30
+Waitlisting Marina(A65545) to Course CSE12 with coins 50
+Waitlisting Don(A76548) to Course CSE11 with coins 25
+Insufficient course coins. Cannot waitlist Pooja(A11111) to CSE15L
+Waitlisting Thiago(A67876) to Course CSE15L with coins 20
+Waitlisting Marina(A65545) to Course CSE15L with coins 30
+
+####STARTING BATCH ENROLLMENT####
+Enrolling Marina(A65545) to Course CSE12 with coins 50
+Enrolling Don(A76548) to Course CSE11 with coins 25
+Enrolling Marina(A65545) to Course CSE15L with coins 30
+Enrolling Pooja(A11111) to Course CSE12 with coins 30
+Enrolling Thiago(A67876) to Course CSE15L with coins 20
+####ENDING BATCH ENROLLMENT####
+
+Insufficient course coins. Cannot waitlist Pooja(A11111) to CSE30
+Waitlisting Thiago(A67876) to Course CSE11 with coins 30
+Waitlisting Don(A76548) to Course CSE15L with coins 15
+Don(A76548) is already waitlisted in Course CSE15L
+Waitlisting Don(A76548) to Course CSE20 with coins 15
+
+####STARTING BATCH ENROLLMENT####
+Enrolling Thiago(A67876) to Course CSE11 with coins 30
+Enrolling Don(A76548) to Course CSE15L with coins 15
+Enrolling Don(A76548) to Course CSE20 with coins 15
+####ENDING BATCH ENROLLMENT####
+
+Waitlisting Max(A55555) to Course CSE12 with coins 30
+
+####END COURSE SCHEDULING####
+
+
+########COURSE INFORMATION######
+CSE12  Data_Structures_and_Object_Oriented_Programming
+	Roster: [Marina(A65545), Pooja(A11111)]
+CSE11  Introduction_to_CS_and_OOP_in_Java
+	Roster: [Don(A76548), Thiago(A67876)]
+CSE15L  Software_Tools_and_Techniques
+	Roster: [Marina(A65545), Thiago(A67876), Don(A76548)]
+CSE30  Computer_Organization_and_Systems_Programming
+	Roster: []
+CSE20  Introduction_to_Discrete_Mathematics
+	Roster: [Don(A76548)]
+
+
+########STUDENT INFORMATION######
+Pooja(A11111)
+	 Enrolled courses: [CSE12]
+	 Waitlisted courses: []
+Don(A76548)
+	 Enrolled courses: [CSE11, CSE15L, CSE20]
+	 Waitlisted courses: []
+Marina(A65545)
+	 Enrolled courses: [CSE12, CSE15L]
+	 Waitlisted courses: []
+Thiago(A67876)
+	 Enrolled courses: [CSE15L, CSE11]
+	 Waitlisted courses: []
+Max(A55555)
+	 Enrolled courses: []
+	 Waitlisted courses: [CSE12]
+Haoran(A12345)
+	 Enrolled courses: []
+	 Waitlisted courses: []
