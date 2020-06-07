@@ -1,0 +1,234 @@
+/*
+ * Filename: evaluator.c
+ * Author: Megan Chu
+ * Userid: A12814536
+ * Login: cs12waot
+ * Description: calculates input using infix to postfix conversion
+ * Date: March 10, 2017
+ * Source of Help:
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "stack.h"
+
+
+//Type conversions starts here//
+
+char* charToString(char c) 
+{
+	char *str = (char*)malloc(sizeof(char)*2);
+	str[0] = c;
+	str[1] = '\0';
+	return str;
+}
+
+char stringToChar(char* str) 
+{
+	return str[0];
+}
+
+char* intToString(int res) 
+{
+	char *str = (char*)malloc(BUFSIZ);
+	sprintf(str,"%d",res);
+	return str;
+}
+
+int stringToInt(char* str) 
+{
+	return atoi(str);
+}
+//Type conversions end here
+
+// --------------------------------------------------------------------------
+
+//Helper function to return precedence of operator
+int precedence(char x) 
+{
+  if(x == '*' || x == '%' || x == '/')
+  {
+    return 0;
+  }
+  else // char is + or -
+  {
+    return 1;
+  }
+}
+
+
+char* convertToPostFix(char* str) 
+{
+  Stack* operatorStack = stack_init(); // stack for ordering operators
+  
+  // char pointer to postfix string
+  char* postfix = (char*)malloc(sizeof(char)*(strlen(str) + 1)); 
+
+  char strArr[strlen(str) + 1];
+  int i;
+  for(i = 0; i < strlen(str); i++)
+  {
+    strArr[i] = *(str + 1);
+  }
+
+
+  int i;
+  for(i = 0; i < strlen(str); i++) // loop through all chars in input string
+  {   
+    if(*(str + i) != '(' && *(str + i) != ')' && 
+       *(str + i) != '+' && *(str + i) != '-' &&
+       *(str + i) != '*' && *(str + i) != '/' &&
+       *(str + i) != '%') // if we have an operand
+    {
+      int j;
+      for(j = 0; j < strlen(postfix); j++) 
+      // loop through postfix string until empty spot
+      {
+        if((postfix + j) == NULL)
+	{
+          *(postfix + j) = *(str + i); // add operand to end of postfix
+          break; // stop loop
+        }
+      }
+    }
+
+    if(*(str + i) == '(') // if we have open parenthesis
+    {
+      push(operatorStack, (str + i)); // push left parenthesis onto stack
+    }
+
+    if(*(str + i) == ')') // if we have closing parenthesis
+    {
+      char* append = pop(operatorStack);
+      while(*append != '(') // pop from stack and add to postfix until we reach open parenthesis
+      {
+        int j;
+        for(j = 0; j < strlen(postfix); j++)
+        {
+          if((postfix + j) == NULL)
+  	  {
+            *(postfix + j) = stringToChar(append); // add popped item to postfix
+            break;
+          }
+        }
+        append = pop(operatorStack);
+      }
+    }
+
+    if(*(str + i) == '+' || *(str + i) == '-' ||
+       *(str + i) == '*' || *(str + i) == '/' ||
+       *(str + i) == '%') // if we have operator
+    {
+      char* preview = (char*)malloc(sizeof(peek(operatorStack))); // get top char in stack
+      preview = peek(operatorStack);
+      char c = stringToChar(str + i);
+      while(precedence(*preview) <= precedence(c)) 
+      // if top char has higher precedence than current operator
+      {
+     /*   char* popped = pop(operatorStack); // pop top char from stack and add to postfix
+        int j;
+        for(j = 0; j < strlen(postfix); j++)
+        {
+          if((postfix + j) == NULL)
+  	  {
+            *(postfix + j) = stringToChar(popped);
+            break;
+          }
+        }
+        preview = stringToChar(peek(operatorStack));*/
+      }
+   //   push(operatorStack, (str + i)); // if top char of stack is lower 
+      // precedence than current operator, push current operator onto stack
+      
+    }
+  }
+
+
+  while(isEmpty(operatorStack) == FALSE) 
+  // after scanning input, pop remaining chars in stack
+  {
+    char* popped = pop(operatorStack);
+    int j;
+    for(j = 0; j < strlen(postfix); j++)
+    {
+      if((postfix + j) == NULL)
+      {
+        *(postfix + j) = stringToChar(popped); // add each popped char to postfix
+        break;
+      }
+    }
+  }  
+
+  return postfix;
+	
+}
+
+
+int calculateExpression(char* str) 
+{
+  Stack* storage = stack_init(); // stack for storage of tokens in postfix
+  int i;
+  for(i = 0; i < strlen(str); i++)
+  {
+    if(*(str + i) != '+' && *(str + i) != '-' &&
+       *(str + i) != '*' && *(str + i) != '/' &&
+       *(str + i) != '%')
+    {
+      push(storage, (str + i));
+    }
+    else
+    {
+      int pop1 = stringToInt(pop(storage));
+      int pop2 = stringToInt(pop(storage));
+      int calc;
+      if(*(str + i) == '+')
+      {
+        calc = pop2 + pop1;      
+      }
+      else if(*(str + i) == '-')
+      {
+        calc = pop2 - pop1;   
+      }
+      else if(*(str + i) == '*')
+      {
+        calc = pop2*pop1;   
+      }
+      else if(*(str + i) == '/')
+      {
+        calc = pop2 / pop1;   
+      }
+      else // char is %
+      {
+        calc = pop2 % pop1;
+      }
+      char* solved = intToString(calc);   
+      push(storage, solved);
+    }
+  }
+  int evaluated = stringToInt(pop(storage));
+  return evaluated;
+}
+
+
+int main(int argc, char **argv) 
+{
+	
+	if(argc<2) 
+        {
+		printf(STR_INCORRECT_ARGUMENT);
+	} 
+        else 
+        {
+		char* input = (char*)malloc(sizeof(char)*strlen(*(argv + 1)));
+                strcpy(input, *(argv + 1));  
+		char* postfix = convertToPostFix(input);
+	//	int answer = calculateExpression(postfix);
+		
+	//	printf(STR_POSTFIX_EXPRESSION,postfix);
+	//	printf(STR_RESULT,answer);
+		free(input);
+	//	free(postfix);
+	}
+	return EXIT_SUCCESS;
+}

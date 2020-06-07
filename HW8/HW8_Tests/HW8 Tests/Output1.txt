@@ -1,0 +1,6 @@
+orange: ok
+spint: saint, stint, spent, spine, spins, pint, spit, spin, sprint
+banana: ok
+wallk: walls, walk, wall
+helo: hero, held, hell, helm, help, hello
+spaint: sprint, paint, saint, spain

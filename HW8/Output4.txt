@@ -1,0 +1,13 @@
+this: ok
+is: ok
+just: ok
+aa: ha, pa, ad, ah, am, an, as, at, ax
+dummydummy: dummy dummy
+inpuu: input
+to: ok
+tessst: not found
+yor: for, nor, yon, you, or, your, york
+output: ok
+cse: use, cue, case
+ucsd: not found
+sandiego: not found

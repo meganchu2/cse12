@@ -1,0 +1,57 @@
+/**
+ * Addind C Standard library
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * Adding local header files
+ */
+#include "Person.h"
+
+/**
+ * Definition of constants
+ */
+#define NUM_ARGS 4
+
+/**
+ * Main method to make a Person struct, populate it and
+ * call helper methods to print Person information.
+ * 
+ * Arguments:
+ *     argc -- Holds the number of command line
+ *             arguments passed.
+ *     argv -- Holds each command line argument as
+ *             char string.
+ *
+ * Error:
+ * If we don't pass in 3 command line arguments, write an error to stderr
+ * and terminate the program
+ *
+ * Return:
+ * EXIT_FAILURE upon hitting an error. EXIT_SUCCESS on successful program run.
+ */
+int main( int argc, char* argv[] ) 
+{	
+  //Checks if we pass in 3 arguments
+  if(argc != 3) 
+  {
+    fprintf( stderr, "Program only accepts 3 command line arguments.\n" );
+             return EXIT_FAILURE;
+  }
+
+  //Make and populate Person struct from command line arguments
+	Person myPerson = //TODO
+
+  //Print Person's initials followed by Person's information
+
+  //TODO: initials first
+
+  printf( "Information:\n" );
+
+  //then print Person informaiton:
+  //Print first and last name followed by whether the Person is an adult or not
+	//TODO
+
+  return EXIT_SUCCESS;
+}

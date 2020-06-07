@@ -1,0 +1,112 @@
+/*
+* NAME: Megan Chu
+* ID: A12814536
+* LOGIN: cs12waot
+*/
+
+
+/**
+ * Including C libraries
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+
+/**
+ * Including function prototypes
+ */
+#include "Person.h"
+
+
+/**
+ * Definition of constants
+ */
+#define INDEX_OF_DOB 6
+#define CURRENT_YEAR 2016
+#define ADULT_YEAR 18
+
+
+/**
+ * Prints first name, last name and the date
+ * of birth of Person to stdout.
+ *
+ * Argument:
+ *    argPerson -- Person to read information from.
+ *
+ * Return:
+ * none.
+ */
+void print( Person argPerson ) 
+{
+  printf("First name: %s\n", argPerson.firstName);
+  printf("Last name: %s\n", argPerson.lastName);
+  printf("Date of birth: %s\n", argPerson.DOB);
+}
+
+
+/**
+ * Prints The initials of Person struct to stdout
+ * and adds a space at end too.
+ *
+ * Argument:
+ *    argPerson -- Person to read information from.
+ *
+ * Return:
+ * none.
+ */
+void printInitials( Person argPerson ) 
+{
+  //Getting the first letter of the names
+  //Hint: think string as array of characters.
+  printf("%s.", argPerson.firstName[0]);
+  printf("%s. ", argPerson.lastName[0]);
+}
+
+
+/**
+ * Calculates the age of Person by subtracting
+ * the current year ( 2016 ) from the Person's
+ * year of birth.
+ *
+ * Argument:
+ *    argPerson -- Person to read information from.
+ *
+ * Return:
+ * The age of Person passed in as argument.
+ */
+int calculateAge( Person argPerson ) 
+{
+  //Getting the year of birth only
+  //Hint: think string as array of characters.
+  int temp = INDEX_OF_DOB;
+  int a = (int)(argPerson.DOB[INDEX_OF_DOB++])*1000;
+  int b = (int)argPerson.DOB[[INDEX_OF_DOB++]*100;
+  int c = (int)argPerson.DOB[[INDEX_OF_DOB++]*10;
+  int d = (int)argPerson.DOB[9];
+  int year = a + b + c + d;
+  int age = 2016 - year;
+  return age;  
+}
+
+
+/**
+ * Checks if Person is an adult or not by getting
+ * the age and comparing it to 18
+ *
+ * Argument:
+ *    argPerson -- Person to read information from.
+ *
+ * Return:
+ * 1 if Person is an adult. 0 otherwise.
+ */
+int isAdult( Person argPerson ) 
+{
+  if(calculateAge(argPerson) >= ADULT_AGE)
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
+}

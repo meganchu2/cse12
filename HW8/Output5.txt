@@ -1,0 +1,27 @@
+speal: steal, spell, speak, spear, peal, seal
+wow: bow, cow, how, low, mow, now, row, tow, vow, woe, won, woo
+poin: coin, join, loin, pain, pin, point
+deq: den, dew
+collywobbles: not found
+aes: yes, ads, ass, as, aces, ages, apes, axes, ayes
+dumbledore: not found
+bik: bib, bid, big, bin, bit, bilk, bike
+sae: see, she, sue, sad, sag, sap, sat, saw, say, safe, sage, sake, sale, same, sane, sate, save, sea
+sael: sail, seal, sale
+glae: glee, glue, glad, glade, glare, gale, glaze
+hogwarts: hog warts
+spong: song, sponge
+lalalalala: not found
+spooo: spook, spool, spoon
+beeg: beef, been, beep, beer, bees, beet, beg, bee
+aol: ail, all, awl
+saz: sad, sag, sap, sat, saw, say
+pif: pie, pig, pin, pit, if, pi
+trian: trial, train
+gif: gig, gin, if, gift
+stael: steel, stall, steal, stale
+helloworld: hello world
+hello: ok
+steap: strap, steep, stead, steak, steal, steam, step
+dat: bat, cat, eat, fat, hat, mat, oat, pat, rat, sat, vat, dot, dad, dam, day, at, dart, data, date
+structure: ok
